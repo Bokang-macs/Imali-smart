@@ -1,0 +1,44 @@
+/**
+ * Imali Smart Primary Stylesheet
+ * Vanilla CSS - Compatible with all browsers and XAMPP deployments
+ */
+@import url('variables.css');
+@import url('global.css');
+@import url('layout.css');
+@import url('components.css');
+@import url('forms.css');
+@import url('tables.css');
+@import url('charts.css');
+@import url('responsive.css');
+
+/* Enhanced interactive accents */
+.badge-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 10px;
+    border-radius: 9999px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.badge-pill--success {
+    background: rgba(34, 197, 94, 0.15);
+    color: #22c55e;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+.badge-pill--warning {
+    background: rgba(234, 179, 8, 0.15);
+    color: #eab308;
+    border: 1px solid rgba(234, 179, 8, 0.3);
+}
+.badge-pill--danger {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+.badge-pill--accent {
+    background: rgba(232, 163, 58, 0.15);
+    color: #e8a33a;
+    border: 1px solid rgba(232, 163, 58, 0.3);
+}

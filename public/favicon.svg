@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="shieldBgFav" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#144a39"/>
+      <stop offset="100%" stop-color="#051711"/>
+    </linearGradient>
+    <linearGradient id="goldFav" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff2a8"/>
+      <stop offset="50%" stop-color="#ffd043"/>
+      <stop offset="100%" stop-color="#b86904"/>
+    </linearGradient>
+  </defs>
+  <path d="M50 4 L86 20 L86 56 C86 76 69 88 50 94 C31 88 14 76 14 56 L14 20 Z" 
+        fill="url(#shieldBgFav)" 
+        stroke="url(#goldFav)" 
+        stroke-width="4" 
+        stroke-linejoin="round"/>
+  <circle cx="50" cy="50" r="24" stroke="url(#goldFav)" stroke-width="2" stroke-dasharray="3 2" fill="none" opacity="0.6"/>
+  <path d="M25 64 L42 48 L52 56 L74 28" fill="none" stroke="url(#goldFav)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <polygon points="64,26 78,25 76,39" fill="url(#goldFav)" stroke="#fff" stroke-width="1"/>
+  <polygon points="50,22 52,27 57,29 52,31 50,36 48,31 43,29 48,27" fill="#ffffff"/>
+</svg>

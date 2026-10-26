@@ -1,0 +1,24 @@
+# ==============================================================================
+# Imali Smart - Minimal .htaccess for InfinityFree
+# ==============================================================================
+
+DirectoryIndex index.php
+
+# Never let the web serve secrets or database dumps
+<FilesMatch "(^\.|\.(env|sqlite|sql|lock|md|log|sh)$)">
+    Require all denied
+</FilesMatch>
+
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Force HTTPS on InfinityFree
+    RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1|\[::1\])(:[0-9]+)?$ [NC]
+    RewriteCond %{HTTP_HOST} !^(192\.168\.|10\.)
+    RewriteCond %{HTTPS} !=on
+    RewriteCond %{HTTP:X-Forwarded-Proto} !https [NC]
+    RewriteCond %{SERVER_PORT} !^443$
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>

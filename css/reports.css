@@ -1,0 +1,2 @@
+/* Styles for reports. */
+@media print { .topbar, .sidebar, .site-footer, .page-heading__actions { display: none !important; } .page-content { padding: 0; } }

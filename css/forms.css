@@ -1,0 +1,2 @@
+/* Feature-specific form rules extend global.css. Keep shared controls in global.css. */
+.form-grid { display: grid; gap: 16px; }

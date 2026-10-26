@@ -1,0 +1,6 @@
+{
+  "name": "Imali Smart",
+  "description": "A South African personal money confidence workspace for tracking income, expenses, budgets, savings, debts, and scanning payment proofs with Gemini AI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

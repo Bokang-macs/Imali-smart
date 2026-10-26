@@ -1,0 +1,25 @@
+{
+  "name": "Imali Smart",
+  "short_name": "Imali Smart",
+  "description": "A free money management workspace for South Africans: budgets, savings, debt payoff and small business cash flow.",
+  "start_url": "index.php",
+  "display": "standalone",
+  "background_color": "#fbfaf6",
+  "theme_color": "#18221f",
+  "lang": "en-ZA",
+  "icons": [
+    {
+      "src": "assets/logo/imali-logo.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "public/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "id": "index.php",
+  "scope": "./"
+}

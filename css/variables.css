@@ -1,0 +1,156 @@
+/* Colours, fonts and spacing used by all other style files, for light and dark themes. */
+:root,
+[data-theme="default"],
+[data-theme="light"] {
+  /* Brand Fintech Palette */
+  --brand-navy: #12305A;
+  --brand-green: #16A34A;
+  --brand-emerald: #10B981;
+  
+  /* Light Mode Palette */
+  --ink: #172033;
+  --ink-soft: #475569;
+  --ink-faint: #64748B;
+  --paper: #F8FAFC;
+  --paper-deep: #F1F5F9;
+  --panel: #FFFFFF;
+  --line: #E2E8F0;
+  --line-strong: #CBD5E1;
+  
+  /* Status Colors (Accessible) */
+  --marigold: #F59E0B;
+  --marigold-deep: #D97706;
+  --marigold-soft: rgba(245, 158, 11, 0.15);
+  --mint: #DCFCE7;
+  --mint-deep: #15803D;
+  --mint-glow: rgba(22, 163, 74, 0.15);
+  --terracotta: #FEE2E2;
+  --terracotta-deep: #DC2626;
+  --blue-wash: #E0F2FE;
+  --blue-deep: #0284C7;
+  
+  /* Shadows & Elevations */
+  --shadow-soft: 0 14px 38px rgba(18, 48, 90, 0.08);
+  --shadow-card: 0 2px 4px rgba(18, 48, 90, 0.04), 0 10px 24px rgba(18, 48, 90, 0.06);
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --sidebar-width: 254px;
+  --content-max: 1480px;
+  --font-body: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+}
+
+/* System Dark Mode when in Default mode */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]),
+  [data-theme="default"] {
+    --ink: #F1F5F9;
+    --ink-soft: #94A3B8;
+    --ink-faint: #64748B;
+    --paper: #0B1220;
+    --paper-deep: #0E1729;
+    --panel: #111C2E;
+    --line: #1E293B;
+    --line-strong: #334155;
+    
+    --brand-navy: #1E3A8A;
+    --brand-green: #22C55E;
+    --brand-emerald: #10B981;
+    
+    --marigold: #FBBF24;
+    --marigold-deep: #F59E0B;
+    --marigold-soft: rgba(251, 191, 36, 0.2);
+    --mint: #064E3B;
+    --mint-deep: #34D399;
+    --mint-glow: rgba(52, 211, 153, 0.2);
+    --terracotta: #450A0A;
+    --terracotta-deep: #F87171;
+    --blue-wash: #0C4A6E;
+    --blue-deep: #38BDF8;
+    
+    --shadow-soft: 0 14px 38px rgba(0, 0, 0, 0.45);
+    --shadow-card: 0 2px 4px rgba(0, 0, 0, 0.3), 0 10px 30px rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* Explicit Dark Theme */
+[data-theme="dark"] {
+  --ink: #F1F5F9;
+  --ink-soft: #94A3B8;
+  --ink-faint: #64748B;
+  --paper: #0B1220;
+  --paper-deep: #0E1729;
+  --panel: #111C2E;
+  --line: #1E293B;
+  --line-strong: #334155;
+  
+  --brand-navy: #1E3A8A;
+  --brand-green: #22C55E;
+  --brand-emerald: #10B981;
+  
+  --marigold: #FBBF24;
+  --marigold-deep: #F59E0B;
+  --marigold-soft: rgba(251, 191, 36, 0.2);
+  --mint: #064E3B;
+  --mint-deep: #34D399;
+  --mint-glow: rgba(52, 211, 153, 0.2);
+  --terracotta: #450A0A;
+  --terracotta-deep: #F87171;
+  --blue-wash: #0C4A6E;
+  --blue-deep: #38BDF8;
+  
+  --shadow-soft: 0 14px 38px rgba(0, 0, 0, 0.45);
+  --shadow-card: 0 2px 4px rgba(0, 0, 0, 0.3), 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* RTL (Right-to-Left) Styles for Arabic and RTL languages */
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .sidebar {
+  inset: 0 0 0 auto;
+  border-right: none;
+  border-left: 1px solid var(--line);
+}
+
+[dir="rtl"] .app-main {
+  margin-left: 0;
+  margin-right: var(--sidebar-width);
+}
+
+[dir="rtl"] .ledger-line {
+  border-radius: 4px 0 0 4px;
+}
+
+[dir="rtl"] .nav-item__tag {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+[dir="rtl"] .toast-container {
+  right: auto;
+  left: 24px;
+}
+
+[dir="rtl"] .callout {
+  border-left: none;
+  border-right: 3px solid var(--marigold);
+  padding: 3px 14px 3px 0;
+}
+
+[dir="rtl"] .data-table th,
+[dir="rtl"] .data-table td {
+  text-align: right;
+}
+
+[dir="rtl"] .data-table th:last-child,
+[dir="rtl"] .data-table td:last-child {
+  text-align: left;
+}
+
+[dir="rtl"] .hero-card__metric {
+  text-align: left;
+}
